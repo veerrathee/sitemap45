@@ -3,11 +3,11 @@
   <% 1.upto(@size) do |i| %>
    <sitemap>
       <loc><%= Discourse.base_url %>/sitemap_<%= i %>.xml</loc>
-      <lastmod><%= @lastmod[i] %></lastmod>
+      <lastmod><%= @lastmod.xmlschema %></lastmod>
    </sitemap>
    <% end %>
    <sitemap>
       <loc><%= Discourse.base_url %>/sitemap_recent.xml</loc>
-      <lastmod><%= @lastmod['recent'] %></lastmod>
+      <lastmod>[TIME_PLACEHOLDER]</lastmod>
    </sitemap>
 </sitemapindex>
