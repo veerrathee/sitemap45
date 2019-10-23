@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # name: discourse-sitemap
 # about: Generate XML sitemap for your Discourse forum.
 # version: 1.2
